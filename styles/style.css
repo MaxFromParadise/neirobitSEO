@@ -638,6 +638,7 @@ html {
   background-repeat: no-repeat;
   padding: 6.75rem 0.8rem 4.875rem 0.8rem;
   border-radius: 1.5rem;
+  margin-bottom: 5rem;
 }
 
 .tariffs__title {
@@ -824,6 +825,101 @@ html {
   margin-bottom: 1.5rem;
 }
 
+/*Steps*/
+
+.steps {
+  background-image: url("../img/steps/steps-bg-big.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 6.75rem 0.8rem 4.875rem 0.8rem;
+  border-radius: 1.5rem;
+}
+
+.steps__title {
+  margin-bottom: 11.875rem;
+}
+
+.steps__flex {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 22.5rem));
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  row-gap: 10rem;
+  -webkit-column-gap: 12rem;
+  -moz-column-gap: 12rem;
+  column-gap: 12rem;
+}
+
+.item-steps {
+  max-width: 22.3125rem;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.item-steps__content {
+  position: relative;
+}
+
+.item-steps__number {
+  color: rgba(34, 34, 34, 0.15);
+  text-align: center;
+  font-family: "Segoe UI";
+  font-size: 12.5rem;
+  font-style: italic;
+  font-weight: 900;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -75%);
+  -ms-transform: translate(-50%, -75%);
+  transform: translate(-50%, -75%);
+}
+
+.item-steps__title {
+  color: #222222;
+  font-family: Roboto;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.item-steps__descr {
+  color: #222222;
+  font-family: Roboto;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.item-steps__arrow {
+  width: 8.75rem;
+  height: 2.5rem;
+  position: absolute;
+  left: 103%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.item-steps__arrow img {
+  width: 100%;
+  height: 100%;
+}
+
+.item-steps__arrow-mobile {
+  display: none;
+}
+
 /* Footer */
 
 @media (max-width: 991.98px) {
@@ -870,6 +966,10 @@ html {
 
   .tariffs {
     background-image: url("../img/tariffs/tariffs-bg-medium.jpg");
+  }
+
+  .steps {
+    background-image: url("../img/steps/steps-bg-medium.png");
   }
 }
 
@@ -969,6 +1069,35 @@ html {
     grid-template-columns: 100%;
     gap: 1rem;
   }
+
+  .steps__flex {
+    grid-template-columns: minmax(0, 30rem);
+    row-gap: 6rem;
+  }
+
+  .item-steps {
+    max-width: 30rem;
+  }
+
+  .item-steps__number {
+    font-size: 15rem;
+  }
+
+  .item-steps__title {
+    font-size: 2rem;
+  }
+
+  .item-steps__descr {
+    font-size: 1.5rem;
+  }
+
+  .item-steps__arrow {
+    display: none;
+  }
+
+  .item-steps__arrow-mobile {
+    display: block;
+  }
 }
 
 @media (max-width: 479.98px) {
@@ -1046,6 +1175,10 @@ html {
 
   .tariffs {
     background-image: url("../img/tariffs/tariffs-bg-small.jpg");
+  }
+
+  .steps {
+    background-image: url("../img/steps/steps-bg-small.png");
   }
 }
 
