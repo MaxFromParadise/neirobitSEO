@@ -2,14 +2,17 @@ document.addEventListener('DOMContentLoaded', () => {
 	const burger = document.querySelector('.burger');
 	const menu = document.querySelector('.nav__list');
 	const menuClose = document.querySelector('.nav__close');
+	const body = document.body;
 
 	burger.addEventListener('click', () => {
 		burger.classList.toggle('active');
 		menu.classList.toggle('active');
+		body.classList.toggle('lock');
 	});
 	menuClose.addEventListener('click', () => {
 		burger.classList.remove('active');
 		menu.classList.remove('active');
+		body.classList.remove('lock');
 	});
 	const swiper = new Swiper('.portfolio__slider', {
 		slidesPerView: 'auto',
