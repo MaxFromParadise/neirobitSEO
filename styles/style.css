@@ -34,6 +34,8 @@ ul {
 
 body {
   padding-top: 0.625rem;
+  max-width: 1920px;
+  margin: 0 auto;
 }
 
 [class*=__container] {
